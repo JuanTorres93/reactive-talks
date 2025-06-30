@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+
+.talk-expanded {
+  background-color: $gray-dark;
+  background-image: linear-gradient(to right, $gray-dark, $gray-light);
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+
+  &__title {
+    color: #111;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 2rem 2rem 0 0;
+
+    background-image: linear-gradient(to right, $primary, $primary-light);
+    box-shadow: 0 1rem 2rem rgba($primary, 0.3);
+  }
+
+  &__content {
+    padding: 2rem 3rem;
+  }
+}

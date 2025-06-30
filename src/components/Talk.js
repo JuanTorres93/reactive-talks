@@ -3,9 +3,11 @@ function Talk({ talk }) {
     <li className="talk">
       <h3 className="talk__title">{talk?.title || "Unkown name"}</h3>
 
-      <p>{talk?.description || "Unkown description"}</p>
+      <p className="description">
+        {talk?.shortDescription || "Unkown description"}
+      </p>
 
-      <span>🧑‍🤝‍🧑 {talk?.attendants || "??"}</span>
+      <span>🧑‍🤝‍🧑 {talk?.attendants?.length || "??"}</span>
       <button>Detail 👉</button>
     </li>
   );

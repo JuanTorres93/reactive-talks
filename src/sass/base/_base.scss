@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+
+// Style of selected text, images, etc.
+::selection {
+  background-color: $primary-light;
+  color: #010101;
+}
