@@ -1,27 +1,29 @@
 // Abstracts
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
-@use 'abstracts/functions';
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/functions";
 
 // Base
-@use 'base/reset';
-@use 'base/typography';
-@use 'base/base';
+@use "base/reset";
+@use "base/typography";
+@use "base/base";
 
 // Layout
-@use 'layout/header';
-@use 'layout/footer';
-@use 'layout/grid';
+@use "layout/header";
+@use "layout/footer";
+@use "layout/grid";
+@use "layout/app-layout";
 
 // Components
-@use 'components/buttons';
-@use 'components/card';
+@use "components/buttons";
+@use "components/talk";
+@use "components/talk-list";
 
 // Pages
-@use 'pages/home';
+@use "pages/home";
 
 // Themes
-@use 'themes/theme';
+@use "themes/theme";
 
 // Vendors
-@use 'vendors/bootstrap';
+@use "vendors/bootstrap";

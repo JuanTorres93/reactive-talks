@@ -1,0 +1,95 @@
+/* Basix reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* 
+    Inherit box-sizing from parent, which will the the value
+    defined in the body element
+    */
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  padding: 1rem 1rem;
+  /*
+  color: $gray-dark;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  */
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: #625f63;
+  border: none;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+.app-layout {
+  display: grid;
+  grid-template-columns: 40vw min-content;
+  padding: 2rem;
+}
+
+.talk {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 2rem;
+  list-style: none;
+  background-color: #625f63;
+  color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.talk__title {
+  grid-row: 1;
+  grid-column: 1/-1;
+  background: #9893da;
+  color: #111;
+  text-align: center;
+  padding: 1rem;
+}
+.talk p {
+  grid-row: 2;
+  grid-column: 1/-1;
+  padding: 0 1rem;
+}
+.talk span {
+  grid-row: 3;
+  grid-column: 1;
+  padding-left: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #3a3a3a;
+  justify-self: left;
+}
+.talk button {
+  grid-row: 3;
+  grid-column: 2;
+  padding: 1rem;
+  border-radius: 1rem;
+  justify-self: right;
+}
+
+.talk-list > li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

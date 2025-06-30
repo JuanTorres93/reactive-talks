@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+
+.talk-list {
+  & > li:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
