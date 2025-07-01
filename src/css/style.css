@@ -67,7 +67,7 @@ textarea:focus {
 }
 
 ::selection {
-  background-color: #bbbdf6;
+  background-color: rgb(171, 174, 255);
   color: #010101;
 }
 
@@ -91,6 +91,18 @@ textarea:focus {
   grid-column: 2;
   grid-row: 1/-1;
   align-self: start;
+  max-width: 70rem;
+}
+.app-layout .talk {
+  max-width: 40rem;
+}
+.app-layout .talk-list {
+  justify-self: end;
+}
+.app-layout .form {
+  max-width: 40rem;
+  justify-self: end;
+  margin-right: 3rem;
 }
 
 .form {
@@ -113,6 +125,7 @@ textarea:focus {
 .form__input-box textarea {
   flex-grow: 1;
   margin-left: 2rem;
+  padding: 1rem;
 }
 
 .talk {
@@ -158,6 +171,12 @@ textarea:focus {
   justify-self: right;
 }
 
+.talk-list {
+  overflow-x: visible;
+  overflow-y: scroll;
+  max-height: 100rem;
+  padding: 3rem;
+}
 .talk-list > li:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -195,6 +214,9 @@ textarea:focus {
 .talk-expanded__attendants img {
   border-radius: 100%;
   margin: 0.5rem;
+}
+.talk-expanded .form {
+  align-self: center;
 }
 
 /*# sourceMappingURL=style.css.map */

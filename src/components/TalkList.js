@@ -1,10 +1,10 @@
 import Talk from "./Talk";
 
-function TalkList({ talks }) {
+function TalkList({ talks, onSelectTalk }) {
   return (
     <ul className="talk-list">
       {talks.map((talk) => (
-        <Talk key={talk.id} talk={talk} />
+        <Talk key={talk.id} talk={talk} onSelectTalk={onSelectTalk} />
       ))}
     </ul>
   );

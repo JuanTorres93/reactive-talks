@@ -1,6 +1,10 @@
-import Form from "./Form";
+import FormNewAttendant from "./FormNewAttendant";
 
-function TalkExpanded({ talk }) {
+function TalkExpanded({ talk, showForm, onShowForm, onAddAttendant }) {
+  const handleClick = (e) => {
+    onShowForm();
+  };
+
   return (
     <div className="talk-expanded">
       <h2 className="talk-expanded__title">{talk?.title || "Unkown title"}</h2>
@@ -26,8 +30,17 @@ function TalkExpanded({ talk }) {
           )}
         </div>
 
-        <Form label1="👱 Name" label2="🖼️ Image" submitText="Add attendant" />
-        <button>🙋 Add attendant</button>
+        {showForm && (
+          <FormNewAttendant
+            label1="👱 Name"
+            label2="🖼️ Image"
+            submitText="Add attendant"
+            onAddAttendant={onAddAttendant}
+          />
+        )}
+        <button onClick={handleClick}>
+          {showForm ? "Close ❌" : "🙋 Add attendant"}
+        </button>
       </div>
     </div>
   );

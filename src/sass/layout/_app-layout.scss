@@ -23,5 +23,20 @@
     grid-row: 1 / -1;
 
     align-self: start;
+    max-width: 70rem;
+  }
+
+  & .talk {
+    max-width: 40rem;
+  }
+
+  & .talk-list {
+    justify-self: end;
+  }
+
+  & .form {
+    max-width: 40rem;
+    justify-self: end;
+    margin-right: 3rem;
   }
 }
