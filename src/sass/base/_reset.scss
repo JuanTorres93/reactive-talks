@@ -31,17 +31,3 @@ body {
   font-style: normal;
   */
 }
-
-button {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  color: $gray-dark;
-  border: none;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
-}

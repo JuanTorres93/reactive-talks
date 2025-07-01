@@ -1,5 +1,45 @@
 @use "../abstracts/variables" as *;
 
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    $primary-light,
+    $gray-light
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: $gray-dark;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: $gray-dark;
+  border: none;
+  border-radius: 0.5rem;
+
+  &:focus {
+    outline: none;
+  }
+}
+
 // Style of selected text, images, etc.
 ::selection {
   background-color: $primary-light;

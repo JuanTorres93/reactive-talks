@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  background-color: $primary-light;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 4rem rgba($primary-dark, 0.4);
+
+  button {
+    align-self: end;
+  }
+
+  &__input-box {
+    display: flex;
+    align-items: center;
+
+    input,
+    textarea {
+      flex-grow: 1;
+      margin-left: 2rem;
+    }
+  }
+}

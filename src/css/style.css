@@ -27,6 +27,17 @@ body {
   */
 }
 
+.description {
+  color: #fff;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #bbbdf6, #72727e);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
 button {
   font-family: inherit;
   font-size: inherit;
@@ -40,8 +51,19 @@ button:focus {
   outline: none;
 }
 
-.description {
-  color: #fff;
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  color: #625f63;
+  border: none;
+  border-radius: 0.5rem;
+}
+input:focus,
+textarea:focus {
+  outline: none;
 }
 
 ::selection {
@@ -52,22 +74,45 @@ button:focus {
 .app-layout {
   display: grid;
   grid-template-columns: 40vw 1fr;
-  grid-template-rows: 100vh;
   grid-row-gap: 2rem;
   grid-column-gap: 4rem;
   padding: 4rem;
-  background-image: linear-gradient(to bottom right, #bbbdf6, #72727e);
 }
 .app-layout button {
-  grid-column: 1;
   padding: 2rem;
   border-radius: 1rem;
   justify-self: end;
+}
+.app-layout form,
+.app-layout button {
+  grid-column: 1;
 }
 .app-layout .talk-expanded {
   grid-column: 2;
   grid-row: 1/-1;
   align-self: start;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #bbbdf6;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 4rem rgba(121, 122, 158, 0.4);
+}
+.form button {
+  align-self: end;
+}
+.form__input-box {
+  display: flex;
+  align-items: center;
+}
+.form__input-box input,
+.form__input-box textarea {
+  flex-grow: 1;
+  margin-left: 2rem;
 }
 
 .talk {
@@ -133,14 +178,19 @@ button:focus {
   box-shadow: 0 1rem 2rem rgba(152, 147, 218, 0.3);
 }
 .talk-expanded__content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
   padding: 2rem 3rem;
+}
+.talk-expanded__content button {
+  align-self: end;
 }
 .talk-expanded__attendants {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  margin: 4rem 0;
 }
 .talk-expanded__attendants img {
   border-radius: 100%;

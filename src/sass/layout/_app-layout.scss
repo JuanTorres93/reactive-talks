@@ -1,24 +1,21 @@
-@use "../abstracts/variables" as *;
-
 .app-layout {
   display: grid;
   grid-template-columns: 40vw 1fr;
-  grid-template-rows: 100vh;
+
   grid-row-gap: 2rem;
   grid-column-gap: 4rem;
   padding: 4rem;
-  background-image: linear-gradient(
-    to bottom right,
-    $primary-light,
-    $gray-light
-  );
 
   & button {
-    grid-column: 1;
     padding: 2rem;
     border-radius: 1rem;
 
     justify-self: end;
+  }
+
+  & form,
+  button {
+    grid-column: 1;
   }
 
   & .talk-expanded {

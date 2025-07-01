@@ -1,3 +1,5 @@
+import Form from "./Form";
+
 function TalkExpanded({ talk }) {
   return (
     <div className="talk-expanded">
@@ -24,7 +26,8 @@ function TalkExpanded({ talk }) {
           )}
         </div>
 
-        <button>Add new attendant</button>
+        <Form label1="👱 Name" label2="🖼️ Image" submitText="Add attendant" />
+        <button>🙋 Add attendant</button>
       </div>
     </div>
   );
