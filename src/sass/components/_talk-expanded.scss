@@ -20,4 +20,16 @@
   &__content {
     padding: 2rem 3rem;
   }
+
+  &__attendants {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+    img {
+      border-radius: 100%;
+      margin: 0.5rem;
+    }
+  }
 }

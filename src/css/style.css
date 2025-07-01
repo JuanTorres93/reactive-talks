@@ -135,5 +135,16 @@ button:focus {
 .talk-expanded__content {
   padding: 2rem 3rem;
 }
+.talk-expanded__attendants {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 4rem 0;
+}
+.talk-expanded__attendants img {
+  border-radius: 100%;
+  margin: 0.5rem;
+}
 
 /*# sourceMappingURL=style.css.map */

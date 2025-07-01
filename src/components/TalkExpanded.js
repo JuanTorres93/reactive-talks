@@ -7,8 +7,24 @@ function TalkExpanded({ talk }) {
           {talk?.description}
         </em>
         {/* <span className="talk__attendants">Attendants: {talk?.attendants}</span> */}
+        <div className="talk-expanded__attendants">
+          {talk?.attendants?.length > 0 ? (
+            talk.attendants.map((attendant) => (
+              <img
+                key={attendant.id}
+                src={attendant.image}
+                alt={attendant.name}
+                title={attendant.name}
+              />
+            ))
+          ) : (
+            <span className="talk-expanded__attendants-title">
+              No attendants
+            </span>
+          )}
+        </div>
 
-        {/* TODO View attendants */}
+        <button>Add new attendant</button>
       </div>
     </div>
   );
