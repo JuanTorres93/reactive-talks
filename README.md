@@ -1,3 +1,5 @@
+![Static Badge](https://img.shields.io/badge/Status-Finished-greenlight)
+
 # Project's purpose
 
 This is a dummy project whose purpose is to build components and manage state. The only React features allowed to be used is useState and components.
